@@ -1,0 +1,14 @@
+/* шапка сайту */
+.header {
+    display: flex;
+
+    flex-direction: row;
+
+    position: relative;
+
+    border-bottom: 1px solid $border-bottom-color;
+}
+
+.header-bottom {
+    margin-bottom: 94px;
+}

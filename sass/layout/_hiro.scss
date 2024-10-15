@@ -1,0 +1,51 @@
+/* секція герой */
+.hiro {
+        background-image: linear-gradient(
+            rgba(0,0,0,0.4), 
+            #2f303a66),
+            url("../images/bg-photo.jpg");
+            background-color: $background;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            text-align: center;
+            
+            height: 600px;
+            
+            max-width: 1600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            margin-bottom: 95px;
+            margin-left: auto;
+            margin-right: auto;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+        .hiro {
+            background-image: url("../images/bg-photo@2x.jpg");
+            }
+    }
+}
+
+
+.hiro-title {
+    color: $white-color;
+    text-transform: uppercase;
+
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        @include font_lh(900, 26px, 0.06em, 1.62);
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font_lh(900, 26px, 0.06em, 1.62);
+    }
+
+    @media screen and (min-width: 1230px) {
+        @include font_lh(900, 44px, 0.06em, 1.36);
+    }
+}

@@ -1,0 +1,87 @@
+/* команда професіоналів */
+.team {
+    background-color: $background-teat-section;
+
+    padding-top: 60px;
+    padding-bottom: 60px;;
+}
+
+.team-title {
+    text-align: center;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+        @include font(700, 28px, 0.03em);
+    }
+
+    @media screen and (min-width: 1230px) {
+        @include font(700, 36px, 0.03em);
+        padding-bottom: 50px;
+    }
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @include font(700, 36px, 0.03em);
+
+    &__item {
+        background-color: $white-color;
+        box-shadow: 0 2px 1px 0 
+        rgba(0, 0, 0, 0.2), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.14), 
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+        margin-bottom: 20px;
+    
+        @media screen and (min-width: 480px) {
+            margin: 15px;
+        }
+
+        @media screen and (max-width: 767px) {
+            &:nth-child(4n) {
+                margin-bottom: 0;  
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 2);
+
+            &:nth-child(2n) {
+                margin: 15px;
+            }
+        }
+
+        @media screen and (min-width: 1230px) {
+            flex-basis: calc((100% - 120px) / 4);
+
+            margin: 15px;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+    
+        padding-bottom: 30px;
+    }
+
+    &__primary-text {
+        padding-bottom: 10px;
+
+        @include font(500, 16px, 0.03em);
+    }
+
+    &__secondary-text {
+        color: $primeri-text-color;
+
+        @include font(400, 16px, 0.03em);
+
+        @media screen and (min-width: 480px) {
+            padding-bottom: 16px;
+        }
+    }
+}
+
+

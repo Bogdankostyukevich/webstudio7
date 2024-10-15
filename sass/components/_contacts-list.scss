@@ -1,0 +1,109 @@
+/* контакти */
+.contacts-list {
+    @media screen and (min-width: 480px) {
+        display: inline-flex;
+        flex-direction: column-reverse;
+
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0;
+
+        
+
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1230px) {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        @include font(500, 14px, 0.02em);
+
+        margin-left: auto;
+    }
+
+    &__item {
+        @media screen and (min-width: 480px) {
+            
+        }
+
+        @media screen and (min-width: 768px) {
+            &:nth-child(1) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width: 1230px) {
+            &:nth-child(1) {
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+
+        color: $primeri-text-color;
+
+        cursor: pointer;
+
+        @media screen and (min-width: 480px) {
+            @include font(500, 34px, 0.02em);
+        }
+
+        @media screen and (min-width: 768px) {
+            @include font(500, 14px, 0.02em);
+
+            &:hover,
+            &:focus {
+            color: $accent-color;
+            }
+        }
+    }
+}
+
+/* іконки svg */
+.contacts-list__icon {
+    fill: currentColor;
+    
+    margin-right: 8px;
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }  
+}
+
+.mail-font {
+    @media screen and (min-width: 480px) {
+        @include font(500, 24px, 0.02em);
+        margin-top: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font(500, 12px, 0.02em);
+        margin: 0;
+    }
+}
+
+.color-phone-number {
+    @media screen and (min-width: 480px) {
+        color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        color: $primeri-text-color;
+    }
+}
